@@ -1,0 +1,19 @@
+//  colors
+
+$prime: #eff3f7;
+$second: #3ba8c0;
+
+$second-light: #41b9d4;
+$second-lighter: #48cbe8;
+$second-lightest: #51daf8;
+
+
+
+
+
+
+@define-mixin sprite {
+    background-image: url(../image/sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+}

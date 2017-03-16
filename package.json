@@ -1,0 +1,33 @@
+{
+  "name": "MyProgect",
+  "version": "0.0.1",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "CV"
+  ],
+  "author": "Max Manchak",
+  "license": "ISC",
+  "homepage": "",
+  "devDependencies": {
+    "autoprefixer": "",
+    "browser-sync": "",
+    "cssnano": "",
+    "gulp": "",
+    "gulp-imagemin": "",
+    "gulp-postcss": "",
+    "gulp-rigger": "",
+    "gulp-uglify": "",
+    "postcss-mixins": "",
+    "postcss-nested": "",
+    "postcss-simple-vars": "",
+    "postcss-smart-import": ""
+  }
+}

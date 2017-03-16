@@ -1,0 +1,12 @@
+.wrapper {
+    background-image: url(../image/background.jpg);
+    background-repeat: repeat;
+}
+
+
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
