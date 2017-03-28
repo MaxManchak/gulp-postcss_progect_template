@@ -38,7 +38,7 @@ var path = {
     html: 'source/**/*.html',
     js: 'source/js/**/*.js',
     style: 'source/css/**/*.css',
-    img: 'source/img/**/*.*',
+    img: 'source/image/**/*.*',
     fonts: 'source/fonts/**/*.*'
   },
   clean: './build'
