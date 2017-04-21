@@ -26,6 +26,7 @@
     "gulp-rigger": "",
     "gulp-uglify": "",
     "postcss-mixins": "",
+    "postcss-move-media": "",
     "postcss-nested": "",
     "postcss-simple-vars": "",
     "postcss-smart-import": ""

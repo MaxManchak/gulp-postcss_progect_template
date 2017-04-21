@@ -7,6 +7,7 @@ var autoprefixer = require('autoprefixer'); //автоматическое до�
 var cssnano = require('cssnano'); // продвинутая минификация css
 var simpleVars = require('postcss-simple-vars');//использование переменных в css
 var mixins = require('postcss-mixins');//использование примесей
+var moveMQ = require('postcss-move-media'); // перемещение и объединение media queries
 // HTML & JS
 var rigger = require('gulp-rigger'); // импорт в файл
 var uglify = require('gulp-uglify'); // минификация js
@@ -64,12 +65,13 @@ gulp.task('css', function() {
   gulp.src(path.src.style)
     .pipe(postcss([
         smartImport(),
+        nested(),
         simpleVars(),
         mixins(),
+        moveMQ(),
         autoprefixer({
           browsers: ['last 10 version']
         }),
-        nested(),
         cssnano(),
     ]))
     .pipe(gulp.dest(path.build.style))
