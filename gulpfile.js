@@ -23,9 +23,10 @@ var path = {
   src: {
     html: 'source/*.html',
     js: 'source/js/script.js',
+    jslib:'source/js/library/*.*',
     style: 'source/css/style.css',
     img: 'source/image/*.*',
-    fonts: 'source/fonts/**/*.*'
+    fonts: 'source/fonts/**'
   },
   build: {
     html: 'build/',
@@ -38,6 +39,7 @@ var path = {
   watch: {
     html: 'source/**/*.html',
     js: 'source/js/**/*.js',
+    jslib: 'source/js/library/*.js',
     style: 'source/css/**/*.css',
     img: 'source/image/**/*.*',
     fonts: 'source/fonts/**/*.*'
@@ -88,6 +90,13 @@ gulp.task('html', function() {
 gulp.task('js', function() {
   gulp.src(path.src.js)
     .pipe(rigger())
+    .pipe(uglify())
+    .pipe(gulp.dest(path.build.js))
+    .pipe(reload({stream: true}));
+});
+
+gulp.task('jslib', function() {
+  gulp.src(path.src.jslib)
     .pipe(uglify())
     .pipe(gulp.dest(path.build.js))
     .pipe(reload({stream: true}));
