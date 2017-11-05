@@ -1,9 +1,10 @@
-.wrapper {
-    background-image: url(../image/background.jpg);
-    background-repeat: repeat;
+html {
+  box-sizing: border-box;
 }
 
-
+*, *::after, *::before {
+  box-sizing: inherit;
+}
 
 .clearfix::after {
   content: '';
