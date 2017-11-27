@@ -56,7 +56,7 @@ var config = {
     baseDir: "build/"
   },
   tunnel: true,
-  host: 'kras-lp',
+  host: 'my-progect',
   port: 9000,
   logPrefix: "Frontend_Devil"
 };
