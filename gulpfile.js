@@ -27,7 +27,7 @@ var path = {
     js: 'source/js/script.js',
     jslib:'source/js/library/*.*',
     style: 'source/css/style.css',
-    img: 'source/image/*.*',
+    img: 'source/images/*.*',
     fonts: 'source/fonts/**'
   },
   build: {
@@ -35,7 +35,7 @@ var path = {
     js: 'build/js/',
     jslib: 'build/js/',
     style: 'build/css/',
-    img: 'build/image/',
+    img: 'build/images/',
     fonts: 'build/fonts/'
   },
 
@@ -44,7 +44,7 @@ var path = {
     js: 'source/js/**/*.js',
     jslib: 'source/js/library/*.js',
     style: 'source/css/**/*.css',
-    img: 'source/image/**/*.*',
+    img: 'source/images/**/*.*',
     fonts: 'source/fonts/**/*.*'
   },
   clean: './build'
