@@ -11,6 +11,7 @@ var moveMQ = require('postcss-move-media'); // перемещение и объ�
 
 // HTML & JS
 var rigger = require('gulp-rigger'); // импорт в файл
+var fileinclude = require('gulp-file-include'); // расширенный импорт в файл
 var uglify = require('gulp-uglify'); // минификация js
 
 // IMAGE
@@ -83,6 +84,10 @@ gulp.task('css', function() {
 //                                            HTML
 gulp.task('html', function() {
   gulp.src(path.src.html)
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
     .pipe(rigger())
     .pipe(gulp.dest(path.build.html))
     .pipe(reload({stream: true}));
@@ -91,6 +96,10 @@ gulp.task('html', function() {
 //                                            JavaScript
 gulp.task('js', function() {
   gulp.src(path.src.js)
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
     .pipe(rigger())
     .pipe(uglify())
     .pipe(gulp.dest(path.build.js))

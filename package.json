@@ -21,6 +21,7 @@
     "browser-sync": "",
     "cssnano": "",
     "gulp": "",
+    "gulp-file-include": "",
     "gulp-imagemin": "",
     "gulp-postcss": "",
     "gulp-rigger": "",
